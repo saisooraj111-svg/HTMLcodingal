@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dsawdadk</title>
+</head>
+<body>
+    <p>a function can access variables defined in the function</p>
+    <button onclick="myFunction()">Click me(or become soup)</button>
+    <p id="demo"></p>
+    <p id="demo2"></p>
+    <p id="demosoup"></p>
+    <script>
+       var b = 5;
+       function myFunction() {
+        var a = 4;
+        document.getElementById("demo").innerHTML = a * b;
+       }
+       document.getElementById("demo2").innerHTML = a;
+       document.getElementById("demosoup").innerHTML = b;
+    </script>
+</body>
+</html>
